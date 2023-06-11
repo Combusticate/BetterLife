@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/start_bg"
+    android:padding="24dp"
+    android:id="@+id/completeView"
+    tools:context=".Survey">
+
+       <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/total_question"
+        android:textStyle="bold"
+        android:text="BetterLife: "
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textAlignment="center"
+        android:layout_margin="20dp"
+        android:layout_above="@id/num_question"
+        />
+
+    <TextView
+        android:id="@+id/num_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/question"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Question Number: "
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/choices_layout"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="What is your goal?"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/choices_layout"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <!-- This is a comment
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/ans"
+           android:layout_margin="5dp"
+           android:backgroundTint="@color/white"
+           android:text="Lose Weight"
+           android:textColor="@color/black"-->
+           />
+       <!-- This is a comment
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/ans_B"
+           android:layout_margin="5dp"
+           android:backgroundTint="@color/white"
+           android:text="Gain Muscle"
+           android:textColor="@color/black"
+           />
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/ans_C"
+           android:layout_margin="5dp"
+           android:backgroundTint="@color/white"
+           android:text="Get fit"
+           android:textColor="@color/black"
+           />
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/ans_D"
+           android:layout_margin="5dp"
+           android:backgroundTint="@color/white"
+           android:text="Eat healthier"
+           android:textColor="@color/black"-->
+            />
+
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit_btn"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/GREEN"
+        android:text="Submit"
+        android:layout_below="@id/choices_layout"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"
+        />
+
+</RelativeLayout>
